@@ -464,7 +464,7 @@ BEGIN
 	Vcl_Consts_SWindowClass,	L"Fehler beim Erzeugen einer Fensterklasse"
 	Vcl_Consts_SCannotFocus,	L"Deaktiviertes oder unsichtbares Fenster kann den Fokus nicht erhalten"
 	Vcl_Consts_SParentRequired,	L"Element '%s' hat kein \x00fcbergeordnetes Fenster"
-	Vcl_Consts_SControlPath,	L". Path:\r\n%s"
+	Vcl_Consts_SControlPath,	L". Pfad:\r\n%s"
 	Vcl_Consts_SParentGivenNotAParent,	L"Das angegebene \x00fcbergeordnete Element ist kein \x00fcbergeordnetes Element von '%s'"
 	Vcl_Consts_SMDIChildNotVisible,	L"Untergeordnetes MDI-Formular kann nicht verborgen werden"
 	Vcl_Consts_SVisibleChanged,	L"Eigenschaft Visible kann in OnShow oder OnHide nicht ver\x00e4ndert werden"

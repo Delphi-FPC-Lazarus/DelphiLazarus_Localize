@@ -48,9 +48,9 @@ uses
   System.Classes, System.Win.Registry,
   Vcl.Graphics, Vcl.Controls, Vcl.Forms, Vcl.Dialogs;
 {$ENDIF}
-function GetApplicationLanguage(sApplication: String): String;
-procedure SetApplicationLanguage(sApplication, sLanguage: String);
-procedure ResetApplicationLanguage(sApplication: String);
+function GetApplicationLanguage(const sApplication: String): String;
+procedure SetApplicationLanguage(const sApplication, sLanguage: String);
+procedure ResetApplicationLanguage(const sApplication: String);
 
 {$IFDEF UNIX}
 procedure SwitchUILanguage(sApplication: String);
@@ -61,7 +61,7 @@ implementation
 const
   sLocalizeRegKey: String = 'Software\Embarcadero\Locales\';
 
-function GetApplicationLanguage(sApplication: String): String;
+function GetApplicationLanguage(const sApplication: String): String;
 var
   Reg: TRegistry;
 begin
@@ -78,7 +78,7 @@ begin
   end;
 end;
 
-procedure ResetApplicationLanguage(sApplication: String);
+procedure ResetApplicationLanguage(const sApplication: String);
 var
   Reg: TRegistry;
 begin
@@ -94,7 +94,7 @@ begin
   end;
 end;
 
-procedure SetApplicationLanguage(sApplication, sLanguage: String);
+procedure SetApplicationLanguage(const sApplication, sLanguage: String);
 var
   Reg: TRegistry;
 begin
